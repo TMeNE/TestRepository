@@ -47,7 +47,8 @@
 2. 暂存区 暂存已经修改的文件最后统一提交到Git仓库中
 3. 工作区（Working Directory）添加、编辑、修改文件等动作  
 
-工作区`git add filename` --> 暂存区`git commit -m "description"` --> Git仓库    `git status` 
+工作区`git add filename` --> 暂存区`git commit -m "description"` --> Git仓库  
+`git status`
 
         nothing to commit (create/copy files and use "git add" to track)
         无需提交（创建/复制文件并使用“git add”进行跟踪）
@@ -78,6 +79,17 @@ $ git rm 'hello.java'
 $ git commit -m 'delete hello.java'
 
 ```
+
+- Git管理远程仓库
+备份、实现代码共享集中化管理
+
+工作区`git add filename` --> 暂存区`git commit -m "description"` --> Git仓库  
+--> `git push` 将本地仓库同步到git远程仓库
+
+-Git克隆操作
+将远程仓库（github对应的项目）复制到本地
+
+
 
 
 
