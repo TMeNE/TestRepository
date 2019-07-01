@@ -45,21 +45,37 @@
 - ### Git工作区域
 1. Git Repository（Git仓库）最终确定的文件保存到仓库，成为一个新的版本，并对他人可见
 2. 暂存区 暂存已经修改的文件最后统一提交到Git仓库中
-3. 工作区（Working Directory）添加、编辑、修改文件等动作
+3. 工作区（Working Directory）添加、编辑、修改文件等动作  
+
 工作区`git add filename` --> 暂存区`git commit -m "description"` --> Git仓库    `git status` 
+
+        nothing to commit (create/copy files and use "git add" to track)
+        无需提交（创建/复制文件并使用“git add”进行跟踪）
+        
+        nothing added to commit but untracked files present (use "git add" to track)
+        没有添加到提交但未跟踪的文件存在（使用“git add”跟踪）
+        
+        Changes to be committed
 
 - ### Git基础设置
 
 ``` git
 # 该设置在GitHub仓库主页显示谁提交了该文件
 $ git config --global user.name 'Ucann'
-$ git config --global user.email '207825248@qq.com'
+$ git config --global user.email '123@456.com'
 
 $ mkdir repositories
 $ cd repositories/
 # 在文件内初始化git（创建git仓库） .git文件存储仓库所有信息
 $ git init
 
+# 添加或修改文件
+$ git add hello.java
+$ git commit -m "add file hello.java"
+
+# 删除文件
+$ git rm 'hello.java'
+$ git commit -m 'delete hello.java'
 
 ```
 
