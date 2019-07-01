@@ -61,6 +61,7 @@
 - ### Git基础设置
 
 ``` git
+$ git config --list
 # 该设置在GitHub仓库主页显示谁提交了该文件
 $ git config --global user.name 'Ucann'
 $ git config --global user.email '123@456.com'
@@ -89,7 +90,10 @@ $ git commit -m 'delete hello.java'
 -Git克隆操作
 将远程仓库（github对应的项目）复制到本地
 
-
+```git
+# git clone 仓库地址
+$ git clone https://github.com/Ucann/TestRepository.git
+```
 
 
 
