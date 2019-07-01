@@ -67,5 +67,6 @@
 
 ---
 本文内容来源：https://github.com/younghz/Markdown
+其他：[GITHUB FLAVORED MARKDOWN](https://guides.github.com/features/mastering-markdown/)
 
 [1]: https://github.com/younghz/Markdown "Markdown/Readme"
