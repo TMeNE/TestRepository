@@ -58,12 +58,11 @@
 # 11. 列表
 用`|`表示表格纵向边界，表头和表内容用`-`隔开，并可用`:`进行对齐设置，两边都有`:`则表示居中，若不加`:`则默认左对齐。
 
-|表头|Content|
-|:----:|----|
-|Chrome|`stackedit` `markdown-here`|
-|Online|`dillinger.io`|
+表头|Content
+:----:|----
+Chrome|`stackedit` `markdown-here`
+Online|`dillinger.io`
 |Website|`Apollo` `Moodle` `Reddit`|
-
 
 ---
 本文内容来源：https://github.com/younghz/Markdown  
