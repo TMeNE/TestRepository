@@ -81,13 +81,13 @@ $ git commit -m 'delete hello.java'
 
 ```
 
-- Git管理远程仓库
+- ### Git管理远程仓库
 备份、实现代码共享集中化管理
 
 工作区`git add filename` --> 暂存区`git commit -m "description"` --> Git仓库  
 --> `git push` 将本地仓库同步到git远程仓库
 
--Git克隆操作
+- ### Git克隆操作
 将远程仓库（github对应的项目）复制到本地
 
 ```git
