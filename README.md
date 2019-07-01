@@ -88,22 +88,39 @@ $ git commit -m 'delete hello.java'
 --> `git push` 将本地仓库同步到git远程仓库
 
 - ### Git克隆操作
-将远程仓库（github对应的项目）复制到本地
+将远程仓库（github对应的项目）复制到本地 `git clone`仓库地址
 
 ```git
-# git clone 仓库地址
 $ git clone https://github.com/Ucann/TestRepository.git
+$ git push
+$ vi .git/config
 ```
 
+- ### 为什么无法同步 —— 解决`git push`错误
+![](images/403forbidden.png)
 
+- ### Github Pages搭建网站
+#### 个人网站  
+- 访问 https://用户名.github.io
+- 搭建步骤  
+        1. 创建个人站点 -> 新建仓库（注意：仓库名必须是 用户名.github.io）
+        2. 在仓库下新建index.html的文件  
+        
+        注意：github pages只支持静态网页，仓库里面只能是.html文件        
 
-
-
-
-
-
-
-
+#### 项目站点
+- 访问 https://用户名.github.io/仓库名
+- 搭建步骤
+        1. 进入项目主页，点击settings
+        2. 在settings页面，点击[Launch automatic page generator]来自动生成主题页面
+        3. 新建站点基础信息设置
+        4. 选择主题
+        5. 生成网页`Publish page`
+       
+项目名称
+项目描述
+具体信息都可以动态修改
+版权信息在branch中修改
 
 
 
