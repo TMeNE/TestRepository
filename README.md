@@ -107,7 +107,7 @@ $ vi .git/config
         2. 在仓库下新建index.html的文件  
         
         注意：github pages只支持静态网页，仓库里面只能是.html文件        
-
+  
 #### 项目站点
 - 访问 https://用户名.github.io/仓库名
 - 搭建步骤
@@ -117,13 +117,10 @@ $ vi .git/config
         4. 选择主题
         5. 生成网页`Publish page`
        
-项目名称
-项目描述
-具体信息都可以动态修改
-版权信息在branch中修改
-
-
-
+        项目名称
+        项目描述
+        具体信息都可以动态修改
+        版权信息在branch中修改
 
 
 [Reference](https://github.com/yezhaodan/-Git/blob/master/GitLearning.md)
