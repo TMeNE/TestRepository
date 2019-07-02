@@ -41,11 +41,27 @@ SVN服务器端配置
   - 新建项目目录jingli
   - 在项目目录右键—>TortoiseSVN --> 版本库浏览器 --> 输入SVN服务器地址`svn://localhost`
   - svn://svn服务器地址 --> Shop目录（仓库） 该指向是由于监管操作 （检出至 `jingli目录` 生成`.svn目录`） 
-  ![svn版本库浏览器.png](/images/svn版本库浏览器.png)  
-  
-  
     
-    
+    ![svn版本库浏览器.png](/images/svn版本库浏览器.png)  
+  
+## SVN基本使用
+- SVN三大指令
+  + Checkout 检出操作：  
+    （Checkout只在第一次链接时操作一次，以后如果进行更新操作则使用Update（更新指令））  
+    连接到SVN服务器端  更新服务端数据到本地
+  + Commit 提交操作：  
+    提交本地数据到服务器端
+  + Update 更新操作：
+- 图标集
+  + 常规图标normal 当客户端文件与服务器端文件完全同步时 系统显示以上图标
+  + 冲突图标conflictes 当客户端提交的文件与服务器端数据有冲突
+  + 删除图标deleted
+  + 增加图标added
+  + 无版本控制图标non-versioned 当我们编写的文件没有添加到上传队列时
+  + 修改图标modified
+  + 只读图标readonly
+  + 锁定图标locked 当服务器端数据已锁定 则客户端文件将自动显示锁定图标
+  + 忽略图标ignore 客户端文件已忽略 不需要进行提交上传 `TortoiseSVN --> add to ignore list`
     
     
     
