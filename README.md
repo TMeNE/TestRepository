@@ -102,19 +102,18 @@ $ vi .git/config
 - ### Github Pages搭建网站
 #### 个人网站  
 - 访问 https://用户名.github.io
-- 搭建步骤  
-        1. 创建个人站点 -> 新建仓库（注意：仓库名必须是 用户名.github.io）
-        2. 在仓库下新建index.html的文件  
-        
-        注意：github pages只支持静态网页，仓库里面只能是.html文件        
+- 搭建步骤          
+        1. 创建个人站点 -> 新建仓库（注意：仓库名必须是 用户名.github.io）      
+        2. 在仓库下新建index.html的文件          
+        注意：github pages只支持静态网页，仓库里面只能是.html文件                
   
 #### 项目站点
 - 访问 https://用户名.github.io/仓库名
-- 搭建步骤
-        1. 进入项目主页，点击settings
-        2. 在settings页面，点击[Launch automatic page generator]来自动生成主题页面
-        3. 新建站点基础信息设置
-        4. 选择主题
+- 搭建步骤  
+        1. 进入项目主页，点击settings    
+        2. 在settings页面，点击[Launch automatic page generator]来自动生成主题页面     
+        3. 新建站点基础信息设置   
+        4. 选择主题         
         5. 生成网页`Publish page`
        
         项目名称
