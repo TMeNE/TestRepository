@@ -18,7 +18,7 @@ SCM-软件配置管理 对软件源代码进行管理和控制
   + 汉化包
 
 SVN工作流程  
-![svn工作流程.png](images/image.png)  
+![svn工作流程.png](/images/image.png)  
 
 SVN服务器端配置
 1. 创建一个项目
@@ -40,8 +40,9 @@ SVN服务器端配置
   2. 使用客户端软件连接SVN服务器（checkout检出）
   - 新建项目目录jingli
   - 在项目目录右键—>TortoiseSVN --> 版本库浏览器 --> 输入SVN服务器地址`svn://localhost`
-  - svn://svn服务器地址 --> Shop目录（仓库） 该指向是由于监管操作  
-  ![svn版本库浏览器.png](images/svn版本库浏览器.png)  
+  - svn://svn服务器地址 --> Shop目录（仓库） 该指向是由于监管操作 （检出至 `jingli目录` 生成`.svn目录`） 
+  ![svn版本库浏览器.png](/images/svn版本库浏览器.png)  
+  
   
     
     
