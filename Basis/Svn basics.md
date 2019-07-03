@@ -45,14 +45,14 @@ SVN服务器端配置
     ![svn版本库浏览器.png](/images/svn版本库浏览器.png)  
   
 ## SVN基本使用
-- SVN三大指令
+- ### SVN三大指令
   + Checkout 检出操作：  
     （Checkout只在第一次链接时操作一次，以后如果进行更新操作则使用Update（更新指令））  
     连接到SVN服务器端  更新服务端数据到本地
   + Commit 提交操作：  
     提交本地数据到服务器端
   + Update 更新操作：
-- 图标集
+- ### 图标集
   + 常规图标normal 当客户端文件与服务器端文件完全同步时 系统显示以上图标
   + 冲突图标conflictes 当客户端提交的文件与服务器端数据有冲突
   + 删除图标deleted
@@ -63,7 +63,7 @@ SVN服务器端配置
   + 锁定图标locked 当服务器端数据已锁定 则客户端文件将自动显示锁定图标
   + 忽略图标ignore 客户端文件已忽略 不需要进行提交上传 `TortoiseSVN --> add to ignore list`
     
-- 版本回退
+- ### 版本回退
   更新至版本 --> 根据日志回退 根据版本号回退  
     
   全递归：检出完整的目录树，包含所有的文件或子目录    
@@ -73,7 +73,7 @@ SVN服务器端配置
   工作副本：保持工作副本指定的深度。此选项不用于检出对话框，但它是其它所有含有深度配置对话框的默认配置  
   排除：对于已经创建好的工作副本，可以使用此选项来缩减文件夹的深度。这个选项只在更新至版本对话框中可用  
 
-- 版本冲突（两个人同时修改某个文件）
+- ### 版本冲突（两个人同时修改某个文件）
   + 合理分配项目开发时间
   + 合理分配项目开发模块
   + 通过svn解决版本冲突问题
@@ -91,13 +91,13 @@ SVN服务器端配置
     修改整合index.php冲突文件
     重新提交数据到SVN服务器端，即可解决版本冲突问题
 
-- 配置多仓库与权限控制  
+- ### 配置多仓库与权限控制  
   通过监管总目录来达到监管所有仓库的目的 监管指令只能监管某一个文件夹  
-  `svnserve -r -d 总目录`  
+  `svnserve -d -r 总目录`  
   `svn://localhost`或`ip地址`来访问总目录  
   子项目：`svn://localhost/子目录`
 
-- 权限控制  
+- ### 权限控制  
   如果要使用权限控制有一个前提：必须首先开启权限功能 
   在每一个仓库中都有一个conf文件夹，里面有三个文件  
   authz文件：授权文件  
@@ -124,10 +124,14 @@ SVN服务器端配置
     * = r
     ```
      
-- SVN服务的配置与管理
- 1. 配置自启动服务
+- ### SVN服务的配置与管理
+  配置自启动服务  
+  `sc create SVNService binPath= "D:\subversion\bin\svnserve.exe --service -r D:/svnroot" start= auto`  
+  `sc create 服务名称` 创建系统服务 服务名SVNservice  
+  `sc create SVNService binPath=空格"svnserve.exe --service -r(SVN监管服务) D:/svn/WebApp" start=空格auto`  
 
-
-
+  创建.bat批处理文件   
+  `net start/stop SVNservice` 启动/停止
+  `sc delete SVNservice` 删除
 
 
